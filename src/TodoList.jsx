@@ -6,17 +6,11 @@ import { useEffect } from 'react';
 import { Box } from '@mui/material';
 import Typography from '@mui/material/Typography';
 
-// const dummyTodos = [
-//   { id: 1, text: 'Walk the dog', completed: true },
-//   { id: 2, text: 'Walk the seal', completed: false },
-//   { id: 3, text: 'Walk the dinosaur', completed: true },
-//   { id: 4, text: 'Walk the fish', completed: false },
-// ]
+
 
 const getTodo = () => {
   const data = JSON.parse(localStorage.getItem('todos'));
-  if(!data) []
-  return data
+  return data || [];
 }
 export default function TodoList() {
   const [todos, setTodos] = useState(getTodo)
