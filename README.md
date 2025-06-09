@@ -1,5 +1,7 @@
 # ✅ React Todo
 
+![react-todo-preview](./src/assets/react-todo-preview.png)
+
 📝 **Project Description**  
 A simple and modern Todo application built with React and Material UI. Easily add, complete, and remove tasks, with your todos saved in local storage for persistence.
 
